@@ -25,7 +25,6 @@ class people::jeremyfuksa {
   include harvest
   include googledrive
   include imageoptim
-  include adobe_creative_cloud
 
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_print_dialog
