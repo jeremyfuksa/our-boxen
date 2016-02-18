@@ -8,7 +8,6 @@ class people::jeremyfuksa {
   include libpng
   include iterm2::stable
   include dropbox
-  include mysql
   include onepassword
   include virtualbox
   include vagrant
@@ -113,7 +112,5 @@ class people::jeremyfuksa {
     provider => pkgdmg,
   }
 
-  exec {"Oh My zsh":
-    command => "sh -c '$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'"
-  }
+  include mysql
 }
