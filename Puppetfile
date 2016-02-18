@@ -89,7 +89,7 @@ github "pkgconfig",   "1.0.0"
 github "pcre",        "1.0.0"
 github "libpng",      "1.0.0"
 
-github "adobe_creative_cloud",  "1.0.0",  repo: => "ngs/puppet-adobe_creative_cloud"
+github "adobe_creative_cloud",  "1.0.0",  :repo => "ngs/puppet-adobe_creative_cloud"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
