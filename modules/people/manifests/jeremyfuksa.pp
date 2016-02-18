@@ -65,10 +65,6 @@ class people::jeremyfuksa {
     ensure => installed,
   }
 
-  package {"pandoc":
-    ensure => installed,
-  }
-
   package {"phpmyadmin":
     ensure => installed,
   }
