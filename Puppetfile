@@ -54,7 +54,7 @@ github "stdlib",      "4.7.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 
-github "adobe_creative_cloud" :repo => "ngs/puppet-adobe_creative_cloud"
+github "adobe_creative_cloud", :repo => "ngs/puppet-adobe_creative_cloud"
 github "iterm2", "1.0.0", :repo => "boxen/puppet-iterm2"
 github "chrome"
 github "dropbox"
