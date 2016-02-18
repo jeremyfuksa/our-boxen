@@ -1,4 +1,11 @@
 class people::jeremyfuksa {
+  include adobe_creative_cloud
+  include wget
+  include autoconf
+  include libtool
+  include pkgconfig
+  include pcre
+  include libpng
   include iterm2::stable
   include dropbox
   include mysql
@@ -12,7 +19,6 @@ class people::jeremyfuksa {
   include tower
   include omnigraffle
   include spotify
-  include slack
   include lingon
   include bartender
   include transmit
@@ -37,40 +43,21 @@ class people::jeremyfuksa {
   include osx::finder::unhide_library
   include osx::finder::show_all_filename_extensions
   include osx::disable_app_quarantine
-  include osx::dock::hot_corner { 'Bottom Left':
-    action => 'Screen Saver'
-  }
+  # include osx::dock::hot_corner { 'Bottom Left':
+  #   action => 'Screen Saver'
+  # }
 
   $version = "5.6"
   class { 'php::global':
     version => $version
   }
-  php::extension::igbinary{"igbinary For PHP ${version}":
-    version => $version
-  }
-  php::extension::mcrypt{"mcrypt For PHP ${version}":
-    version => $version
-  }
-  php::extension::memcached{"memcached For PHP ${version}":
-    version => $version
-  }
-
   include php::composer
-
-  include homebrew
-  package {"jpeg":
-    ensure => installed,
-  }
 
   package {"lame":
     ensure => installed,
   }
 
   package {"libmemcached":
-    ensure => installed,
-  }
-
-  package {"mcrypt":
     ensure => installed,
   }
 

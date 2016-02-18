@@ -71,7 +71,7 @@ node default {
     node_version => '*',
   }
 
-  npm_module { 'bower for all nodes':
+  npm_module { 'bower-installer for all nodes':
     module       => 'bower-installer',
     version      => '*',
     node_version => '*',
